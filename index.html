@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = prompt('Сколько Вам лет?');
+        if (age == 1 || age == 21 || age == 31 || age == 41 || age == 51 || age == 61 || age == 71 || age == 81 || age == 91 || age == 101) {
+            alert('Вам точно ' + age + ' год!');
+        } else if (age >= 2 && age <= 4 || age >= 22 && age <= 24 || age >= 32 && age <= 34 || age >= 42 && age <= 44 || age >= 52 && age <= 54 || age >= 62 && age <= 64 || age >= 72 && age <= 74 || age >= 82 && age <= 84 || age >= 92 && age <= 94 || age >= 102 && age <= 104) {
+            alert('Вам точно ' + age + ' года!');
+        } else if (age >= 5 && age <= 20 || age >= 25 && age <= 30 || age >= 35 && age <= 40 || age >= 45 && age <= 50 || age >= 55 && age <= 60 || age >= 65 && age <= 70 || age >= 75 && age <= 80 || age >= 85 && age <= 90 || age >= 95 && age <= 100) {
+            alert('Вам точно ' + age + ' лет!');
+        } else if (age == 0) {
+            alert('Вам точно ' + age + ' лет! Какой развитый малыш!');
+        }
+        else if (age == "") {
+            alert("Пусто!");
+        }
+        else if (age < 0) {
+            alert("Так не бывает!");
+        }
+        else if (age = /[^А-Яа-яA-Za-z]/) {
+            alert("Цифры пожалуйста!");
+        }
+    </script>
+</body>
+</html>
