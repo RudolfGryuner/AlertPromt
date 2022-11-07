@@ -12,7 +12,10 @@
     <script>
         var age = prompt('Сколько Вам лет?');
         var ageLastNumber = age % 10;
-        if (ageLastNumber == 1) {
+        if ((age % 100 >= 11) && (age % 100 <= 14)) {
+            alert('Вам точно ' + age + ' лет!');
+        }
+        else if (ageLastNumber == 1) {
             alert('Вам точно ' + age + ' год!');;
         }
         else if (ageLastNumber == 0 || ageLastNumber >= 5 && ageLastNumber <= 9) {
@@ -27,9 +30,7 @@
         else if (age = /[^А-Яа-яA-Za-z]/) {
             alert("Цифры пожалуйста!");
         }
-        else {
-            alert('Вам точно ' + age + ' лет!');
-        }
+
     </script>
 </body>
 
